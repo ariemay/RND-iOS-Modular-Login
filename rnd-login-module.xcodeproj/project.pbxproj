@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70AA152E52E0D34E12B700AF /* libPods-rnd-login-module.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E5A434528051E71546E468 /* libPods-rnd-login-module.a */; };
 		C6B2984F25FBA1AF0061647B /* rnd_login_module.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B2984D25FBA1AF0061647B /* rnd_login_module.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6B2985725FBA1C40061647B /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B2985625FBA1C40061647B /* LoginStoryboard.storyboard */; };
+		C6B2985A25FBA1D60061647B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2985925FBA1D60061647B /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11E5A434528051E71546E468 /* libPods-rnd-login-module.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnd-login-module.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B2984A25FBA1AF0061647B /* rnd_login_module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = rnd_login_module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B2984D25FBA1AF0061647B /* rnd_login_module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rnd_login_module.h; sourceTree = "<group>"; };
 		C6B2984E25FBA1AF0061647B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6B2985625FBA1C40061647B /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		C6B2985925FBA1D60061647B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F1EF1C6FAFD58CE5819FCB85 /* Pods-rnd-login-module.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnd-login-module.release.xcconfig"; path = "Target Support Files/Pods-rnd-login-module/Pods-rnd-login-module.release.xcconfig"; sourceTree = "<group>"; };
+		FA4FEA387956534F241107D1 /* Pods-rnd-login-module.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnd-login-module.debug.xcconfig"; path = "Target Support Files/Pods-rnd-login-module/Pods-rnd-login-module.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +29,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70AA152E52E0D34E12B700AF /* libPods-rnd-login-module.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20F75EBBD3750204D962F16A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA4FEA387956534F241107D1 /* Pods-rnd-login-module.debug.xcconfig */,
+				F1EF1C6FAFD58CE5819FCB85 /* Pods-rnd-login-module.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5B9FD43E46E3B11479F6821C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11E5A434528051E71546E468 /* libPods-rnd-login-module.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6B2984025FBA1AF0061647B = {
 			isa = PBXGroup;
 			children = (
 				C6B2984C25FBA1AF0061647B /* rnd-login-module */,
 				C6B2984B25FBA1AF0061647B /* Products */,
+				20F75EBBD3750204D962F16A /* Pods */,
+				5B9FD43E46E3B11479F6821C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +77,8 @@
 			children = (
 				C6B2984D25FBA1AF0061647B /* rnd_login_module.h */,
 				C6B2984E25FBA1AF0061647B /* Info.plist */,
+				C6B2985625FBA1C40061647B /* LoginStoryboard.storyboard */,
+				C6B2985925FBA1D60061647B /* LoginViewController.swift */,
 			);
 			path = "rnd-login-module";
 			sourceTree = "<group>";
@@ -70,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6B2985225FBA1AF0061647B /* Build configuration list for PBXNativeTarget "rnd-login-module" */;
 			buildPhases = (
+				DE5DA35046540455DC79D841 /* [CP] Check Pods Manifest.lock */,
 				C6B2984525FBA1AF0061647B /* Headers */,
 				C6B2984625FBA1AF0061647B /* Sources */,
 				C6B2984725FBA1AF0061647B /* Frameworks */,
@@ -94,6 +126,7 @@
 				TargetAttributes = {
 					C6B2984925FBA1AF0061647B = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -120,16 +153,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B2985725FBA1C40061647B /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DE5DA35046540455DC79D841 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rnd-login-module-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6B2984625FBA1AF0061647B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B2985A25FBA1D60061647B /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +320,9 @@
 		};
 		C6B2985325FBA1AF0061647B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA4FEA387956534F241107D1 /* Pods-rnd-login-module.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7QAVKC3WGP;
@@ -277,6 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ariemay.rnd-login-module";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,7 +347,9 @@
 		};
 		C6B2985425FBA1AF0061647B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1EF1C6FAFD58CE5819FCB85 /* Pods-rnd-login-module.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7QAVKC3WGP;

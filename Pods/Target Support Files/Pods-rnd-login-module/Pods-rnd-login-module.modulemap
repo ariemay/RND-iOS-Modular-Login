@@ -1,0 +1,6 @@
+module Pods_rnd_login_module {
+  umbrella header "Pods-rnd-login-module-umbrella.h"
+
+  export *
+  module * { export * }
+}
