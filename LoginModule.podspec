@@ -29,10 +29,10 @@ s.dependency 'Alamofire', '~> 4.7'
 s.dependency 'MBProgressHUD', '~> 1.1.0'
 
 # 8
-s.source_files = "LoginModule/**/*.{swift}"
+s.source_files = "rnd-login-module/**/*.{swift}"
 
 # 9
-s.resources = "LoginModule/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+s.resources = "rnd-login-module/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 
 # 10
 s.swift_version = "5.3"
