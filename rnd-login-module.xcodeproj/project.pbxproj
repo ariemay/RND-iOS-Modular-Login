@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		70AA152E52E0D34E12B700AF /* libPods-rnd-login-module.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E5A434528051E71546E468 /* libPods-rnd-login-module.a */; };
 		C6B2984F25FBA1AF0061647B /* rnd_login_module.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B2984D25FBA1AF0061647B /* rnd_login_module.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6B2985725FBA1C40061647B /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B2985625FBA1C40061647B /* LoginStoryboard.storyboard */; };
+		C6B2985725FBA1C40061647B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B2985625FBA1C40061647B /* Main.storyboard */; };
 		C6B2985A25FBA1D60061647B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2985925FBA1D60061647B /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -18,7 +18,7 @@
 		C6B2984A25FBA1AF0061647B /* rnd_login_module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = rnd_login_module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B2984D25FBA1AF0061647B /* rnd_login_module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rnd_login_module.h; sourceTree = "<group>"; };
 		C6B2984E25FBA1AF0061647B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6B2985625FBA1C40061647B /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		C6B2985625FBA1C40061647B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C6B2985925FBA1D60061647B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F1EF1C6FAFD58CE5819FCB85 /* Pods-rnd-login-module.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnd-login-module.release.xcconfig"; path = "Target Support Files/Pods-rnd-login-module/Pods-rnd-login-module.release.xcconfig"; sourceTree = "<group>"; };
 		FA4FEA387956534F241107D1 /* Pods-rnd-login-module.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnd-login-module.debug.xcconfig"; path = "Target Support Files/Pods-rnd-login-module/Pods-rnd-login-module.debug.xcconfig"; sourceTree = "<group>"; };
@@ -42,7 +42,6 @@
 				FA4FEA387956534F241107D1 /* Pods-rnd-login-module.debug.xcconfig */,
 				F1EF1C6FAFD58CE5819FCB85 /* Pods-rnd-login-module.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,7 +76,7 @@
 			children = (
 				C6B2984D25FBA1AF0061647B /* rnd_login_module.h */,
 				C6B2984E25FBA1AF0061647B /* Info.plist */,
-				C6B2985625FBA1C40061647B /* LoginStoryboard.storyboard */,
+				C6B2985625FBA1C40061647B /* Main.storyboard */,
 				C6B2985925FBA1D60061647B /* LoginViewController.swift */,
 			);
 			path = "rnd-login-module";
@@ -153,7 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6B2985725FBA1C40061647B /* LoginStoryboard.storyboard in Resources */,
+				C6B2985725FBA1C40061647B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
